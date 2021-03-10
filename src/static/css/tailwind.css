@@ -16,5 +16,5 @@ h3 {
 
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
-  @apply bg-white-800;
+  @apply bg-lightblue-800;
 }
