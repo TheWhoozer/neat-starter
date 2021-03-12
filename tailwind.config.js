@@ -16,7 +16,6 @@ module.exports = {
         cyan: colors.cyan,
       },
     },
-  },
   darkMode: 'class',
   variants: {},
   plugins: [require("@tailwindcss/typography")],
