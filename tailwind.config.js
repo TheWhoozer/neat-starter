@@ -11,7 +11,10 @@ module.exports = {
       center: true,
     },
     extend: {
-      colors: {},
+      colors: {
+        'light-blue': colors.lightBlue,
+        cyan: colors.cyan,
+      },
     },
   },
   darkMode: 'class',
