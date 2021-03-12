@@ -20,7 +20,7 @@ layout: blog
                 <time>
                     {{ post.date | readableDate }}
                     by
-                    <a>{{ post.data.author }}</a>
+                    <a class=" text-black dark:text-white">{{ post.data.author }}</a>
 
                 </time>
             </p>
@@ -31,7 +31,7 @@ layout: blog
             {% endif %}
 
             <p>
-                <a href="{{ post.url | url }}" class="text-white float-right font-bold text-lg">
+                <a href="{{ post.url | url }}" class=" text-black dark:text-white float-right font-bold text-lg">
                     Read more →
                 </a>
             </p>
