@@ -2,7 +2,7 @@
 layout: blog
 ---
 
-<section class="mt-15 pb-10">
+<section class="mt-15">
     {% set postslist = collections.post %}
 
     {% for post in postslist | reverse %}
@@ -31,7 +31,7 @@ layout: blog
             {% endif %}
 
             <p>
-                <a href="{{ post.url | url }}" class="text-white float-right font-bold text-lg">
+                <a href="{{ post.url | url }}" class="text-white float-right font-bold text-lg pb-6">
                     Read more →
                 </a>
             </p>
