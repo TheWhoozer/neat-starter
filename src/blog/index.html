@@ -2,11 +2,11 @@
 layout: blog
 ---
 
-<section class="mt-15">
+<section class="mt-15 bg-gradient-to-r from-cyan-400 to-light-blue-500">
     {% set postslist = collections.post %}
 
     {% for post in postslist | reverse %}
-        <article class="my-8 pb-12 p-6 bg-gradient-to-r from-cyan-400 to-light-blue-500 border border-gray-400 dark:border-gray-200 rounded ">
+        <article class="my-8 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
             <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                 <a href="{{ post.url | url }}">
                     {% if post.data.title %}
