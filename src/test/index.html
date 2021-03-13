@@ -6,6 +6,32 @@ layout: test
     <section class="relative bg-white shadow-lg sm:rounded-3xl sm:p-6">
         <div class="m-10 border border-red-300">
             {% set postslist = collections.post %}
+            {% for post in postslist | reverse %}
+                <article class="my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
+                    <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
+                        <a href="{{ post.url | url }}">
+                            {% if post.data.title %}
+                                {{ post.data.title }}
+                            {% else %}
+                                Untitled
+                            {% endif %}
+                        </a>
+                    </h2>
+                    <p class="text-base leading-6 text-gray-600 dark:text-gray-400 mb-3">
+                        <time>
+                            {{ post.date | readableDate }}
+                            by
+                            <a class=" text-black dark:text-white">{{ post.data.author }}</a>
+
+                        </time>
+                    </p>
+                    {% if post.data.description %}
+                        <p class="text-lg text-gray-500 mb-3">
+                            {{ post.data.description }}
+                        </p>
+                    {% endif %}
+                </article>
+            {% endfor %}
         </div>
     </section>
 </div>
