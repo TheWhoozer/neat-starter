@@ -5,24 +5,23 @@ layout: test
     <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
     <section class="relative bg-white shadow-lg sm:rounded-3xl sm:p-6">
         <div class="m-10 border border-red-300">
-            {% set testslist = collections.test %}
-
-            {% for test in testslist | reverse %}
+            
+            {% for post in collections.post %}
                 <article class="my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
                     <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                         <a href="{{ test.url | url }}">
-                            {% if test.data.title %}
-                                {{ test.data.title }}
+                            {% if post.data.title %}
+                                {{ post.data.title }}
                             {% else %}
                                 Untitled
                             {% endif %}
                         </a>
                     </h2>
                         by
-                        <a class=" text-black dark:text-white">{{ test.data.author }}</a>
-                    {% if test.data.description %}
+                        <a class=" text-black dark:text-white">{{ post.data.author }}</a>
+                    {% if post.data.description %}
                         <p class="text-lg text-gray-500 mb-3">
-                            {{ test.data.description }}
+                            {{ post.data.description }}
                         </p>
                     {% endif %}
 
