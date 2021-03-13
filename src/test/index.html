@@ -18,14 +18,8 @@ layout: test
                             {% endif %}
                         </a>
                     </h2>
-                    <p class="text-base leading-6 text-gray-600 dark:text-gray-400 mb-3">
-                        <time>
-                            {{ post.date | readableDate }}
-                            by
-                            <a class=" text-black dark:text-white">{{ post.data.author }}</a>
-
-                        </time>
-                    </p>
+                        by
+                        <a class=" text-black dark:text-white">{{ post.data.author }}</a>
                     {% if post.data.description %}
                         <p class="text-lg text-gray-500 mb-3">
                             {{ post.data.description }}
