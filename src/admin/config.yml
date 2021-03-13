@@ -13,7 +13,7 @@ local_backend: true
 # publish_mode: editorial_workflow
 collections:
   - label: "Test"
-    name: "test"
+    name: "wprks"
     folder: "src/works"
     create: true
     editor:
