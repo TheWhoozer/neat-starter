@@ -5,33 +5,29 @@ layout: test
     <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
     <section class="relative bg-white shadow-lg sm:rounded-3xl sm:p-6">
         
-        {% for test in collections.test %}
+        {% for work in collections.work %}
             <article class="my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
                 <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                     <a href="{{ post.url | url }}">
-                        {% if test.data.title %}
-                            {{ test.data.title }}
+                        {% if work.data.title %}
+                            {{ work.data.title }}
                         {% else %}
                             Untitled
                         {% endif %}
                     </a>
                 </h2>
                 <p class="text-base leading-6 text-gray-600 dark:text-gray-400 mb-3">
-                    <time>
-                        {{ test.date | readableDate }}
                         by
-                        <a class=" text-black dark:text-white">{{ test.data.author }}</a>
-
-                    </time>
+                        <a class=" text-black dark:text-white">{{ work.data.author }}</a>
                 </p>
-                {% if test.data.description %}
+                {% if work.data.description %}
                     <p class="text-lg text-gray-500 mb-3">
-                        {{ test.data.description }}
+                        {{ work.data.description }}
                     </p>
                 {% endif %}
 
                 <p>
-                    <a href="{{ test.url | url }}" class=" text-black dark:text-white float-right font-bold text-lg">
+                    <a href="{{ work.url | url }}" class=" text-black dark:text-white float-right font-bold text-lg">
                         Read more →
                     </a>
                 </p>
