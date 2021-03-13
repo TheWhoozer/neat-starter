@@ -12,7 +12,7 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Works"
+ - label: "Works"
     name: "works"
     folder: "src/works"
     create: true
@@ -20,11 +20,10 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
+      - widget: file
         label: "tags"
         name: "tags"
         multiple: true
