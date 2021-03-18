@@ -8,31 +8,32 @@ layout: test
         {% for work in collections.work %}
             <article class="flex my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
                 <img class="max-w-xs" src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}"></img>
-                <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
-                    <a href="{{ work.url | url }}">
-                        {% if work.data.title %}
-                            {{ work.data.title }}
-                        {% else %}
-                            Untitled
-                        {% endif %}
-                    </a>
-                </h2>
-                <p class="text-base leading-6 text-gray-600 dark:text-gray-400 mb-3">
-                        by
-                        <a class=" text-black dark:text-white">{{ work.data.author }}</a>
-                </p>
-                {% if work.data.description %}
-                    <p class="text-lg text-gray-500 mb-3">
-                        {{ work.data.description }}
+                <div>
+                    <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
+                        <a href="{{ work.url | url }}">
+                            {% if work.data.title %}
+                                {{ work.data.title }}
+                            {% else %}
+                                Untitled
+                            {% endif %}
+                        </a>
+                    </h2>
+                    <p class="text-base leading-6 text-gray-600 dark:text-gray-400 mb-3">
+                            by
+                            <a class=" text-black dark:text-white">{{ work.data.author }}</a>
                     </p>
-                {% endif %}
+                    {% if work.data.description %}
+                        <p class="text-lg text-gray-500 mb-3">
+                            {{ work.data.description }}
+                        </p>
+                    {% endif %}
 
-                <p>
-                    <a href="{{ work.url | url }}" class=" text-black dark:text-white float-right font-bold text-lg">
-                        Read more →
-                    </a>
-                </p>
-
+                    <p>
+                        <a href="{{ work.url | url }}" class=" text-black dark:text-white float-right font-bold text-lg">
+                            Read more →
+                        </a>
+                    </p>
+                </div>
             </article>
         {% endfor %}
     </section>
