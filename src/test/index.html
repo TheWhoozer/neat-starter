@@ -10,7 +10,7 @@ layout: test
                 <div class="flex">
                     <a href="{{ work.url | url }}">
                         {% if work.data.thumbnail %}
-                            <img class="max-w-xs" src="https://github.com/TheWhoozer/neat-starter/blob/c4ea8df3a560cf25af547e55ecbf1e49e93f7df8/src/static/img/erik-mclean-bgwvhfy1gh0-unsplash.jpg" alt="{{ thumbnail }}">
+                            <img class="max-w-xs" src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}">
                         {% else %}
                             <img class="max-w-xs" src="" alt="{{ thumbnail }}"></img>
                         {% endif %}
