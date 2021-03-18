@@ -23,6 +23,6 @@ permalink: /tags/{{ tag }}/
 
 {% block content %}
   {% for item in taglist | reverse %}
-    {%- include "post-teaser-condensed.njk" -%}
+    {%- include "post-teaser-condensed.html" -%}
   {% endfor %}
 {% endblock %}
