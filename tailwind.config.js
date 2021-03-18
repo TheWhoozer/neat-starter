@@ -16,7 +16,8 @@ module.exports = {
       colors: {
         'light-blue': colors.lightBlue,
         cyan: colors.cyan,
-        bg: "#121212",
+        bgDark: "#121212",
+        bgLight: "#ffffff",
       },
     },
   },
