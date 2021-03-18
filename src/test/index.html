@@ -11,7 +11,7 @@ layout: test
                     <a href="{{ work.url | url }}">
                         <img class="max-w-xs" src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}">
                     </a>
-                    <div class=" truncate overflow-ellipsis overflow-hidden  pt-2 pl-4 pr-2 w-80 h-52">
+                    <div class="break-words overflow-ellipsis overflow-hidden  pt-2 pl-4 pr-2 w-80 h-52">
                         <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                             <a href="{{ work.url | url }}">
                                 {% if work.data.title %}
