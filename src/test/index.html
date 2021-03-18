@@ -12,7 +12,7 @@ layout: test
                     <a href="{{ work.url | url }}">
                         <img class="max-w-xs" src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}">
                     </a>
-                    <div class="break-words overflow-ellipsis overflow-hidden  pt-2 pl-4 pr-2 w-80 h-52">
+                    <div class="pt-2 pl-4 pr-2 w-80 h-52">
                         <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                             <a href="{{ work.url | url }}">
                                 {% if work.data.title %}
@@ -24,10 +24,10 @@ layout: test
                         </h2>
                         <p class="text-base leading-6 text-gray-600 dark:text-gray-400 mb-3">
                                 by
-                                <a class=" text-black dark:text-white">{{ work.data.author }}</a>
+                                <a class="text-black dark:text-white">{{ work.data.author }}</a>
                         </p>
                         {% if work.data.description %}
-                            <p class="text-lg text-gray-500 mb-3">
+                            <p class="break-words overflow-ellipsis overflow-hiddentext-lg text-gray-500 mb-3">
                                 {{ work.data.description }}
                             </p>
                         {% endif %}
