@@ -9,7 +9,7 @@ layout: test
             <article class="my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded">
                 <div class="flex">
                     <img class="max-w-xs" src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}"></img>
-                    <div class="border border-blue-400 p-4 h-24 overflow-hidden">
+                    <div class="border border-blue-400 p-4 h-48 overflow-hidden">
                         <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                             <a href="{{ work.url | url }}">
                                 {% if work.data.title %}
@@ -30,11 +30,7 @@ layout: test
                         {% endif %}
                     </div>
                 </div>
-                <p>
-                    <a href="{{ work.url | url }}" class=" text-black dark:text-white float-right font-bold text-lg">
-                        Read more →
-                    </a>
-                </p>
+
 
                 
             </article>
