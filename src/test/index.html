@@ -6,8 +6,8 @@ layout: test
     <section class="relative bg-white shadow-lg sm:rounded-3xl sm:p-6">
 
         {% for work in collections.work %}
-            <article class="my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
-                <div class="flex max-w-sm">
+            <article class="flex my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
+                <div class="max-w-sm">
                     <img src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}"></img>
                     <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                         <a href="{{ work.url | url }}">
