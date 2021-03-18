@@ -8,15 +8,13 @@ layout: test
         {% for work in collections.work %}
             <article class="my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded">
                 <div class="flex">
-                    <img class="max-w-xs" src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}">
-                        <a href="{{ work.url | url }}">
-                            {% if work.data.thumbnail %}
-                                {{ work.data.thumbnail }}
-                            {% else %}
-                               <img class="max-w-xs" src="src/static/img/erik-mclean-bgwvhfy1gh0-unsplash.jpg" alt="{{ thumbnail }}"></img>
-                            {% endif %}
-                        </a>
-                    </img>
+                    <a href="{{ work.url | url }}">
+                        {% if work.data.thumbnail %}
+                            <img class="max-w-xs" src="{{ work.data.thumbnail }}" alt="{{ thumbnail }}">
+                        {% else %}
+                            <img class="max-w-xs" src=".../static/img/erik-mclean-bgwvhfy1gh0-unsplash.jpg" alt="{{ thumbnail }}"></img>
+                        {% endif %}
+                    </a>
                     <div class="overflow-ellipsis overflow-hidden border border-blue-400 pt-2 pl-4 w-72 h-52">
                         <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
                             <a href="{{ work.url | url }}">
