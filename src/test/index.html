@@ -27,13 +27,14 @@ layout: test
                             {{ work.data.description }}
                         </p>
                     {% endif %}
+                </div>
 
                     <p>
                         <a href="{{ work.url | url }}" class=" text-black dark:text-white float-right font-bold text-lg">
                             Read more →
                         </a>
                     </p>
-                </div>
+                
             </article>
         {% endfor %}
     </section>
