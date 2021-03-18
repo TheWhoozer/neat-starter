@@ -19,6 +19,6 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 author: Me
 date: 2021-03-13T21:58:17.110Z
 tags:
-  - Tags
+  - from
 ---
 Idc fuck this
