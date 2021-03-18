@@ -8,7 +8,7 @@ layout: test
         {% for work in collections.work %}
             <article class="my-3 pb-12 p-6 border border-gray-400 dark:border-gray-200 rounded ">
                 <h2 class="font-bold text-indigo-500 text-3xl mb-2 pt-1">
-                    <a href="{{ post.url | url }}">
+                    <a href="{{ work.url | url }}">
                         {% if work.data.title %}
                             {{ work.data.title }}
                         {% else %}
